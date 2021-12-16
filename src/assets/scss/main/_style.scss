@@ -1,0 +1,3467 @@
+@charset "utf-8";
+
+/*
+/*	Copyright (c) 2021 ib-themes
+/*	Author: ib-themes
+/*	This file is made for CURRENT TEMPLATE
+
+01)	BENY BENY BASE
+02) BENY TOPBAR
+03) BENY MOBILE MENU
+04) BENY HERO
+05) BENY ABOUT
+06) BENY RESUME
+07) BENY SERVICES
+08) BENY PORTFOLIO
+09) BENY TESTIMONIALS
+10) BENY NEWS
+11) BENY CONTACT
+12) BENY COPYRIGHT
+13) BENY CURSOR
+
+
+/*--------------------------------f-------------------*/
+/*	01) BENY BASE
+/*---------------------------------------------------*/
+
+html {
+  overflow-x: hidden;
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0px;
+  word-wrap: break-word;
+  font-weight: 400;
+  background-color: #fff;
+  color: #6e6e6e;
+}
+body::-webkit-scrollbar {
+  width: 11px;
+}
+body {
+  scrollbar-width: thin;
+  scrollbar-color: #999 #fff;
+}
+body:-webkit-scrollbar-track {
+  background: #fff;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #999;
+  border-radius: 6px;
+  border: 3px solid #fff;
+}
+svg {
+  fill: currentcolor;
+  width: 15px;
+  height: 15px;
+}
+img.svg {
+  width: 15px;
+  height: 15px;
+}
+::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: #6e6e6e;
+}
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #6e6e6e;
+  opacity: 1;
+}
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #6e6e6e;
+  opacity: 1;
+}
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #6e6e6e;
+}
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #6e6e6e;
+}
+
+::placeholder {
+  /* Most modern browsers support this now. */
+  color: #6e6e6e;
+}
+
+body.dark ::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: #a9afc3;
+}
+body.dark :-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #a9afc3;
+  opacity: 1;
+}
+body.dark ::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #a9afc3;
+  opacity: 1;
+}
+body.dark :-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #a9afc3;
+}
+body.dark ::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #a9afc3;
+}
+
+body.dark ::placeholder {
+  /* Most modern browsers support this now. */
+  color: #a9afc3;
+}
+.d-flex-center {
+  display: flex;
+  align-items: center;
+}
+.container {
+  max-width: 1290px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  padding: 0px 40px;
+  position: relative;
+  clear: both;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+  line-height: 1.3;
+  font-family: "Poppins";
+  color: #000;
+}
+
+h1 {
+  font-size: 45px;
+}
+h2 {
+  font-size: 36px;
+}
+h3 {
+  font-size: 30px;
+}
+h4 {
+  font-size: 24px;
+}
+h5 {
+  font-size: 20px;
+}
+h6 {
+  font-size: 16px;
+}
+
+.beny_tm_all_wrap {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  position: relative;
+}
+.beny_tm_all_wrap,
+.beny_tm_all_wrap * {
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box; /* Opera/IE 8+ */
+}
+.beny_tm_section {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+}
+#preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 99999;
+  display: flex;
+}
+#preloader:before,
+#preloader:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  z-index: -1;
+  background-color: #000;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+#preloader:after {
+  left: auto;
+  right: 0;
+}
+#preloader .loader_line {
+  margin: auto;
+  width: 1px;
+  height: 250px;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: all 0.8s ease 0s;
+  -o-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
+}
+.loader_line:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 1px;
+  height: 0%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  background-color: #fff;
+  -webkit-animation: lineheight 1000ms ease-in-out 0s forwards;
+  -o-animation: lineheight 1000ms ease-in-out 0s forwards;
+  animation: lineheight 1000ms ease-in-out 0s forwards;
+}
+.loader_line:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  background-color: #999999;
+  -webkit-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  transform: translateY(-100%);
+  -webkit-animation: lineround 1200ms linear 0s infinite;
+  -o-animation: lineround 1200ms linear 0s infinite;
+  animation: lineround 1200ms linear 0s infinite;
+  animation-delay: 2000ms;
+}
+body.dark #preloader:before,
+body.dark #preloader:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  z-index: -1;
+  background-color: #fff;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+body.dark #preloader:after {
+  left: auto;
+  right: 0;
+}
+body.dark .loader_line:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 1px;
+  height: 0%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  background-color: #555;
+  -webkit-animation: lineheight 1000ms ease-in-out 0s forwards;
+  -o-animation: lineheight 1000ms ease-in-out 0s forwards;
+  animation: lineheight 1000ms ease-in-out 0s forwards;
+}
+body.dark .loader_line:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  background-color: #ddd;
+  -webkit-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  transform: translateY(-100%);
+  -webkit-animation: lineround 1200ms linear 0s infinite;
+  -o-animation: lineround 1200ms linear 0s infinite;
+  animation: lineround 1200ms linear 0s infinite;
+  animation-delay: 2000ms;
+}
+
+@keyframes lineheight {
+  0% {
+    height: 0%;
+  }
+  100% {
+    height: 100%;
+  }
+}
+
+@keyframes lineround {
+  0% {
+    -webkit-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(200%);
+    -ms-transform: translateY(200%);
+    -o-transform: translateY(200%);
+    transform: translateY(200%);
+  }
+}
+
+/*hiding all*/
+.preloaded .loader_line:after {
+  opacity: 0;
+}
+.preloaded .loader_line {
+  opacity: 0;
+  height: 100% !important;
+}
+.preloaded:before,
+.preloaded:after {
+  -webkit-animation: preloadedzero 300ms ease-in-out 500ms forwards;
+  -o-animation: preloadedzero 300ms ease-in-out 500ms forwards;
+  animation: preloadedzero 300ms ease-in-out 500ms forwards;
+}
+@keyframes preloadedzero {
+  0% {
+    width: 50%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+
+/*---------------------------------------------------*/
+/*	02) BENY TOPBAR
+/*---------------------------------------------------*/
+
+.beny_tm_topbar {
+  position: fixed;
+  top: 0;
+  left: 0px;
+  right: 0px;
+  z-index: 10;
+
+  -webkit-transition: all 0.8s ease;
+  -moz-transition: all 0.8s ease;
+  -ms-transition: all 0.8s ease;
+  -o-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+}
+.beny_tm_topbar .in {
+  padding: 30px 60px;
+  transition: all 0.3s ease;
+  @media screen and (max-width: 991px) {
+    padding: 30px 15px;
+  }
+}
+.beny_tm_topbar.animate .in {
+  background-color: #fff;
+  padding: 20px 60px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.08);
+}
+
+.beny_tm_topbar .topbar_inner {
+  width: 100%;
+  height: auto;
+  clear: both;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.beny_tm_topbar .logo img {
+  max-width: 90px;
+  max-height: 70px;
+}
+.beny_tm_topbar ul {
+  margin: 0px;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+.beny_tm_topbar ul li {
+  margin: 0px 30px 0px 0px;
+  list-style-type: none;
+  @media screen and (max-width: 991px) {
+    margin: 0px 25px 0px 0px;
+  }
+}
+.beny_tm_topbar ul li:last-child {
+  margin-right: 0px;
+}
+.beny_tm_topbar ul li a,
+.social ul li a {
+  text-decoration: none;
+  color: #6e6e6e;
+  font-size: 16px;
+  font-weight: 500;
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+.dark-img {
+  display: none;
+}
+.beny_tm_topbar.creative {
+  .animate .in {
+    padding: 20px 40px;
+  }
+  ul li a,
+  .social ul li a {
+    color: #fff;
+  }
+  &.animate {
+    ul li a,
+    .social ul li a {
+      color: #000;
+    }
+    ul li.current a {
+      color: #f52225;
+      border-color: #f52225 !important;
+    }
+    .light-img {
+      display: none;
+    }
+    .dark-img {
+      display: block;
+    }
+    ul li:last-child a {
+      border-color: #555;
+      &:hover {
+        border-color: #f52225;
+        color: #f52225;
+      }
+    }
+  }
+  ul li:last-child a {
+    border-color: #eee;
+    transition: 0.3s ease-in-out;
+  }
+}
+@media screen and (max-width: 991px) {
+  .beny_tm_topbar ul li a {
+    color: #fff;
+  }
+  .beny_tm_topbar.animate ul li a {
+    color: #6e6e6e;
+  }
+  .beny_tm_topbar.animate ul li:last-child a {
+    border-color: #6e6e6e;
+  }
+}
+
+.beny_tm_topbar ul li:last-child a {
+  border: 2px solid #6e6e6e;
+  padding: 5px 30px;
+  border-radius: 6px;
+  @media screen and (max-width: 991px) {
+    border-color: #e4e4e4;
+  }
+}
+.beny_tm_topbar ul li:last-child:hover a {
+  border-color: #f52225;
+}
+.beny_tm_topbar ul li:last-child.current a {
+  border-color: #f52225;
+}
+.beny_tm_topbar ul li .first,
+.social ul li .first {
+  display: block;
+  position: relative;
+  transition: all 0.3s ease;
+}
+.beny_tm_topbar ul li .second,
+.social ul li .second {
+  position: absolute;
+  top: 100%;
+  transition: all 0.3s ease;
+}
+.beny_tm_topbar ul li a:hover .first,
+.social ul li a:hover .first {
+  transform: translateY(-150%);
+}
+.beny_tm_topbar ul li a:hover .second,
+.social ul li a:hover .second {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.beny_tm_topbar ul li .wrapper {
+  position: relative;
+  overflow: hidden;
+  display: block;
+}
+.beny_tm_topbar ul li.current a {
+  color: #f52225;
+}
+.beny_tm_topbar ul li.current a .first {
+  transform: translateY(-150%);
+}
+.beny_tm_topbar ul li.current a .second {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.beny_tm_topbar ul li a:hover {
+  color: #f52225;
+}
+
+/*---------------------------------------------------*/
+/*	03) BENY MOBILE MENU
+/*---------------------------------------------------*/
+
+.beny_tm_mobile_menu {
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  display: none;
+  z-index: 10;
+}
+.beny_tm_mobile_menu .my_trigger {
+  line-height: 1;
+  position: relative;
+  right: -10px;
+}
+.beny_tm_mobile_menu .mobile_menu_inner {
+  width: 100%;
+  height: auto;
+  float: left;
+  clear: both;
+  background-color: #fff;
+  padding: 15px 0px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.08);
+}
+.beny_tm_mobile_menu .mobile_in {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.beny_tm_mobile_menu .mobile_in .logo img {
+  max-width: 70px;
+}
+.my_trigger .hamburger-box {
+  display: block;
+}
+.my_trigger .hamburger {
+  padding: 0px;
+}
+.my_trigger .hamburger .hamburger-inner::before,
+.my_trigger .hamburger .hamburger-inner::after,
+.my_trigger .hamburger .hamburger-inner {
+  background-color: #000;
+  width: 30px;
+  height: 2px;
+
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.beny_tm_mobile_menu .dropdown {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.08);
+  display: none;
+}
+.beny_tm_mobile_menu .dropdown .dropdown_inner {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  padding: 25px 0px;
+}
+.beny_tm_mobile_menu .dropdown .dropdown_inner ul {
+  margin: 0px;
+  list-style-type: none;
+}
+.beny_tm_mobile_menu .dropdown .dropdown_inner ul li {
+  margin: 0px;
+  float: left;
+  width: 100%;
+}
+.beny_tm_mobile_menu .dropdown .dropdown_inner ul li a {
+  text-decoration: none;
+  color: #000;
+  display: inline-block;
+  padding: 4px 0px;
+  font-family: "Poppins";
+  font-weight: 500;
+}
+
+/*---------------------------------------------------*/
+/*	04) BENY HERO
+/*---------------------------------------------------*/
+
+.beny_tm_hero {
+  width: 100%;
+  min-height: 100vh;
+  float: left;
+  position: relative;
+  overflow: hidden;
+  @media screen and (max-width: 991px) {
+    .mobile_social.d-block-social svg {
+      color: #fff !important;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(7, 5, 5, 0.7);
+      z-index: 1;
+    }
+    .content {
+      position: relative;
+      z-index: 5;
+      .name,
+      .job,
+      .mobile_social ul li a {
+        color: #fff !important;
+      }
+      .job {
+        span {
+          margin-top: 10px;
+        }
+      }
+      .text {
+        color: rgba(255, 255, 255, 0.9);
+        font-size: 15px;
+      }
+
+      .beny_tm_button a {
+        color: #fff;
+        border-color: #fff;
+        padding: 7px 30px;
+      }
+    }
+  }
+  &.white-text-wrapper {
+    .content {
+      width: 100%;
+      max-width: 820px;
+      justify-content: center;
+      text-align: center;
+      margin: auto;
+      .job,
+      .name,
+      .text {
+        color: #fff;
+      }
+      .job {
+        font-weight: 600;
+      }
+      .name {
+        font-size: 20px;
+      }
+      .text {
+        font-size: 16px;
+        font-weight: 300;
+        padding: 0 10%;
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(7, 5, 5, 0.78);
+      z-index: 1;
+    }
+
+    .beny_tm_button a {
+      border-color: #eee;
+      color: #fff;
+      font-weight: 400;
+      border-radius: 50px;
+      font-size: 17px;
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  }
+}
+.shape {
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  z-index: 5;
+}
+.beny_tm_hero .background {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+.beny_tm_hero .background .image {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 75% 0%;
+}
+.beny_tm_hero .background .overlay {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  /*	background-color: rgba(255,255,255,.3);*/
+  z-index: 1;
+}
+.beny_tm_hero .background .overlay.video {
+  background-color: rgba(255, 255, 255, 0.85);
+}
+.beny_tm_hero .container {
+  min-height: 100vh;
+  z-index: 2;
+}
+.beny_tm_hero .content {
+  width: 100%;
+  max-width: 800px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.beny_tm_hero .content .name {
+  font-weight: 400;
+  font-size: 26px;
+  color: #0f172a;
+  margin-bottom: 22px;
+  @media screen and (max-width: 767px) {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+}
+
+.beny_tm_hero .content .job {
+  font-weight: 700;
+  font-size: 70px;
+  color: #0f172a;
+  margin-bottom: 15px;
+  line-height: 1.2;
+}
+
+.beny_tm_hero .content .job span {
+  color: #f52225;
+}
+.beny_tm_hero .content .text {
+  margin-bottom: 30px;
+  padding-right: 50px;
+  @media screen and (max-width: 767px) {
+    padding-right: 0;
+  }
+}
+.news_share ul li svg {
+  fill: transparent;
+  width: 20px;
+  height: 20px;
+  color: #6e6e6e;
+}
+.beny_tm_hero .mobile_social {
+  width: 100%;
+  margin-bottom: 30px;
+  ul {
+    margin: 0 -10px;
+    display: flex;
+    padding: 0;
+    list-style: none;
+    li {
+      margin: 0 10px;
+      a {
+        display: flex;
+        svg {
+          fill: transparent;
+          width: 22px;
+          height: 22px;
+          color: #fff;
+          stroke-width: 1.5 !important;
+        }
+      }
+    }
+  }
+  display: none;
+  &.d-block-social {
+    display: block;
+    svg {
+      color: #555;
+      transition: 0.3s;
+      &:hover {
+        color: #f52225;
+      }
+    }
+  }
+  @media screen and (max-width: 991px) {
+    display: block;
+  }
+}
+
+.beny_tm_button {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+}
+
+.beny_tm_button .wrapper {
+  position: relative;
+  overflow: hidden;
+  display: block;
+}
+.beny_tm_button a,
+.beny_tm_button button {
+  text-decoration: none;
+  color: #0f172a;
+  font-size: 18px;
+  font-weight: 500;
+  border: 2px solid #6e6e6e;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+  background: transparent;
+  transition: border 0.3s;
+}
+.beny_tm_button button {
+  &.color {
+    border-color: #f52225;
+    background: #f52225;
+    color: #fff;
+    span {
+      color: #fff;
+    }
+  }
+}
+.beny_tm_button a .first,
+.beny_tm_button button .first {
+  display: block;
+  position: relative;
+  transition: all 0.3s ease;
+}
+.beny_tm_button a .second,
+.beny_tm_button button .second {
+  position: absolute;
+  top: 100%;
+  display: block;
+  transition: all 0.3s ease;
+}
+.beny_tm_button a:hover .first,
+.beny_tm_button button:hover .first {
+  transform: translateY(-150%);
+}
+.beny_tm_button a:hover .second,
+.beny_tm_button button:hover .second {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.beny_tm_button.color a {
+  color: #fff;
+  background-color: #f52225;
+  border-color: #f52225;
+}
+.beny_tm_button.color a:hover {
+  color: #fff;
+}
+.beny_tm_button a:hover,
+.beny_tm_button button:hover {
+  color: #f52225;
+  border-color: #f52225;
+}
+.beny_tm_contact .beny_tm_button a {
+  padding: 10px 40px;
+}
+.beny_tm_hero .social {
+  position: absolute;
+  bottom: 60px;
+  right: 60px;
+  z-index: 2;
+  transition: all 0.8s ease;
+}
+.beny_tm_hero .social ul {
+  margin: 0px;
+  list-style-type: none;
+}
+.beny_tm_hero .social ul li {
+  margin: 0px 0px 20px 0px;
+}
+.beny_tm_hero .social ul li:last-child {
+  margin-bottom: 0px;
+}
+.beny_tm_hero .social ul li a {
+  text-decoration: none;
+  color: #6e6e6e;
+  font-size: 18px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+.beny_tm_hero .social ul li a:hover {
+  color: #f52225;
+}
+
+/*---------------------------------------------------*/
+/*	05) BENY ABOUT
+/*---------------------------------------------------*/
+
+.beny_tm_about {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  background-color: #f9f9fc;
+  padding: 120px 0px;
+}
+.beny_tm_title_holder {
+  width: 100%;
+  max-width: 680px;
+  height: auto;
+  clear: both;
+  float: left;
+}
+.beny_tm_title_holder span {
+  display: inline-block;
+  position: relative;
+  color: #f52225;
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+.beny_tm_title_holder span:before {
+  position: absolute;
+  content: "";
+  width: 40px;
+  height: 1px;
+  background-color: #f52225;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 100%;
+  margin-left: 10px;
+}
+.beny_tm_title_holder h2 {
+  font-size: 55px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 15px;
+}
+.beny_tm_about .about_inner {
+  width: 100%;
+  height: auto;
+  clear: both;
+  display: flex;
+  align-items: center;
+  padding-top: 60px;
+  margin-bottom: 120px;
+}
+.beny_tm_about .about_inner .left {
+  width: 50%;
+  position: relative;
+  margin-right: 50px;
+}
+.beny_tm_about .about_inner .left img {
+  opacity: 0;
+  min-width: 100%;
+}
+.beny_tm_about .about_inner .left .image {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+}
+.beny_tm_about .about_inner .right {
+  width: 50%;
+  padding-left: 50px;
+}
+.beny_tm_about .short {
+  width: 100%;
+  float: left;
+  border-bottom: 1px solid #cbd3d9;
+  padding-bottom: 20px;
+}
+.beny_tm_about .short h3 {
+  font-size: 32px;
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 10px;
+}
+.beny_tm_about .short h5 {
+  font-size: 18px;
+  margin-bottom: 22px;
+  .theme-color {
+    color: #f52225;
+  }
+}
+.beny_tm_about .short p {
+  font-size: 16px;
+}
+.beny_tm_about .extra {
+  width: 100%;
+  float: left;
+  padding-top: 23px;
+}
+.beny_tm_about .extra .title {
+  color: #0f172a;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.beny_tm_about .list {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  margin-bottom: 20px;
+}
+.beny_tm_about .list ul {
+  margin: 0px 0px 0px -20px;
+  list-style-type: none;
+}
+.beny_tm_about .list ul li {
+  margin: 0px 0px 14px 0px;
+  width: 50%;
+  float: left;
+  padding-left: 20px;
+}
+.beny_tm_about .list ul li p {
+  color: #0f172a;
+  font-size: 16px;
+  font-weight: 500;
+}
+.beny_tm_about .list ul li p span {
+  color: #6e6e6e;
+  font-weight: 400;
+}
+.about_social {
+  margin-top: 20px;
+  ul {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li {
+      margin-right: 15px;
+    }
+    svg {
+      fill: transparent;
+      width: 22px;
+      height: 22px;
+      color: #6e6e6e;
+      stroke-width: 1.7 !important;
+      transition: 0.3s;
+      &:hover {
+        transform: translateY(-5px);
+        color: #f52225;
+      }
+    }
+  }
+}
+/*---------------------------------------------------*/
+/*	06) BENY RESUME
+/*---------------------------------------------------*/
+
+.beny_tm_resume {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+}
+.beny_tm_resume .main_title {
+  width: 100%;
+  margin-bottom: 50px;
+}
+.beny_tm_resume .main_title h3 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #0f172a;
+}
+.beny_tm_resume .resume_inner {
+  width: 100%;
+  height: auto;
+  clear: both;
+  display: flex;
+}
+
+.beny_tm_resume .resume_title {
+  width: 100%;
+  float: left;
+  position: relative;
+  overflow: hidden;
+}
+.beny_tm_resume .resume_title .svg {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0px;
+  width: 30px;
+  height: 30px;
+  fill: none;
+  margin-top: -2px;
+}
+.beny_tm_resume .resume_title span {
+  display: inline-block;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 30px;
+  color: #0f172a;
+  font-weight: 600;
+  padding-left: 60px;
+}
+.beny_tm_resume .resume_title span:before {
+  position: absolute;
+  content: "";
+  width: 1000px;
+  height: 1px;
+  background-color: #6e6e6e;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 100%;
+  margin-left: 20px;
+}
+
+.progress_inner {
+  width: 100%;
+  margin-bottom: 32px;
+}
+.progress_inner:last-child {
+  margin-bottom: 0px;
+}
+.progress_inner > span {
+  margin: 0px 0px 4px 0px;
+  display: block;
+  text-align: left;
+  position: relative;
+}
+.progress_inner span.label {
+  display: block;
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.5s ease;
+  color: #0f172a;
+}
+.progress_inner span.label.opened {
+  opacity: 1;
+  transform: translateY(0px);
+}
+.progress_inner span.number {
+  float: right;
+  position: absolute;
+  right: 15%;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 2s cubic-bezier(0.165, 0.84, 0.44, 1); /* IE 10+ */
+  color: #6e6e6e;
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 500;
+}
+.progress_inner .background {
+  background: #e2e2e2;
+  width: 100%;
+  min-width: 100%;
+  position: relative;
+  height: 6px;
+  border-radius: 18px;
+}
+.progress_inner .background .bar_in {
+  height: 100%;
+  background: #f52225;
+  overflow: hidden;
+  border-radius: 18px;
+}
+.progress_inner .background .bar {
+  width: 0px;
+  height: 100%;
+}
+.progress_inner .background .bar.open {
+  -webkit-animation: wow 2s cubic-bezier(0.165, 0.84, 0.44, 1); /* Safari 4+ */
+  -moz-animation: wow 2s cubic-bezier(0.165, 0.84, 0.44, 1); /* Fx 5+ */
+  animation: wow 2s cubic-bezier(0.165, 0.84, 0.44, 1); /* IE 10+ */
+  width: 100%;
+}
+.copy {
+  a {
+    color: #fff;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+      color: #f52225;
+    }
+  }
+}
+
+@-webkit-keyframes wow {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@-moz-keyframes wow {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes wow {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.beny_tm_resume .edu_list ul {
+  margin: 0px;
+  list-style-type: none;
+}
+.beny_tm_resume .edu_list {
+  ul {
+    li {
+      width: 100%;
+      &:not(:last-child) {
+        border-bottom: 1px solid #efefef;
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+      }
+    }
+  }
+}
+.beny_tm_resume .edu_list ul li p,
+.beny_tm_resume .edu_list ul li .year {
+  font-size: 16px;
+  color: #6e6e6e;
+}
+.beny_tm_resume .edu_list ul li .year {
+  margin-bottom: 3px;
+  display: block;
+}
+.beny_tm_resume .edu_list ul li {
+  p span {
+    font-size: 18px;
+    color: #0f172a;
+    font-weight: 500;
+  }
+}
+
+/*---------------------------------------------------*/
+/*	07) BENY SERVICES
+/*---------------------------------------------------*/
+
+.beny_tm_services {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  padding-bottom: 90px;
+  padding-top: 117px;
+}
+.beny_tm_services .service_list {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  padding-top: 60px;
+}
+.beny_tm_services ul {
+  margin: 0px 0px 0px -30px;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.beny_tm_services ul li {
+  margin: 0px 0px 30px 0px;
+  width: 25%;
+  padding-left: 30px;
+  float: left;
+}
+.beny_tm_services ul li .list_inner {
+  width: 100%;
+  height: 100%;
+  clear: both;
+  float: left;
+  position: relative;
+  background-color: #f9f9fc;
+  padding: 50px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.beny_tm_services ul li .list_inner:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.beny_tm_services ul li .svg {
+  width: 50px;
+  height: 50px;
+  color: #f52225;
+  margin-bottom: 25px;
+  fill: none;
+}
+.beny_tm_services ul li h3 {
+  font-weight: 600;
+  font-size: 26px;
+  color: #0f172a;
+  margin-bottom: 20px;
+}
+.beny_tm_services ul li .learn_more {
+  text-decoration: none;
+  color: #6e6e6e;
+  font-size: 18px;
+  display: inline-block;
+  position: relative;
+
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.beny_tm_services ul li .learn_more span {
+  position: absolute;
+  display: inline-block;
+  width: 10px;
+  height: 2px;
+  background-color: #6e6e6e;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 14px;
+  border-radius: 50px;
+
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.beny_tm_services ul li .learn_more span:before {
+  position: absolute;
+  content: "";
+  width: 6px;
+  height: 2px;
+  background-color: #6e6e6e;
+  transform: rotate(45deg);
+  right: 0px;
+  top: -2px;
+  border-radius: 50px;
+
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.beny_tm_services ul li .learn_more span:after {
+  position: absolute;
+  content: "";
+  width: 6px;
+  height: 2px;
+  background-color: #6e6e6e;
+  transform: rotate(-45deg);
+  right: 0px;
+  bottom: -2px;
+  border-radius: 50px;
+
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.beny_tm_services ul li .list_inner:hover .learn_more span {
+  width: 30px;
+  background-color: #f52225;
+}
+.beny_tm_services ul li .list_inner:hover .learn_more span:before,
+.beny_tm_services ul li .list_inner:hover .learn_more span:after {
+  background-color: #f52225;
+}
+.beny_tm_services ul li .list_inner:hover .learn_more {
+  color: #f52225;
+}
+.beny_tm_full_link {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 5;
+}
+
+.beny_tm_modalbox_service .close {
+  position: fixed;
+  left: 100%;
+  top: 0px;
+  margin-left: 40px;
+  z-index: 111111;
+}
+.beny_tm_modalbox_service .close a {
+  text-decoration: none;
+  color: #fff;
+}
+.beny_tm_modalbox_service .close .svg {
+  width: 50px;
+  height: 50px;
+}
+.beny_tm_modalbox_service .description_wrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  padding: 50px;
+  overflow-y: scroll;
+}
+.beny_tm_services .popup_informations {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  z-index: -11;
+  display: none;
+}
+.beny_tm_modalbox_service .description_wrap .svg {
+  display: none;
+}
+.beny_tm_modalbox_service .description_wrap .service_title {
+  display: none;
+}
+.beny_tm_modalbox_service .description_wrap .learn_more {
+  display: none;
+}
+.beny_tm_modalbox_service .popup_informations {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+}
+.beny_tm_modalbox_service .popup_informations .image {
+  position: relative;
+  max-height: 450px;
+  margin-bottom: 50px;
+}
+.beny_tm_modalbox_service .popup_informations .image img {
+  position: relative;
+  min-width: 100%;
+  opacity: 0;
+}
+.beny_tm_modalbox_service .popup_informations .image .main {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.beny_tm_modalbox_service .popup_informations h3 {
+  color: #0f172a;
+  font-size: 23px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.beny_tm_modalbox_service .popup_informations p {
+  margin-bottom: 30px;
+}
+.beny_tm_modalbox_service .in_list {
+  width: 100%;
+  float: left;
+  margin-bottom: 30px;
+  padding-left: 20px;
+}
+.beny_tm_modalbox_service .in_list ul {
+  margin: 0px;
+  list-style-type: none;
+}
+.beny_tm_modalbox_service .in_list ul li {
+  margin: 0px 0px 15px 0px;
+  width: 100%;
+  float: left;
+  position: relative;
+  padding-left: 20px;
+}
+.beny_tm_modalbox_service .in_list ul li:before {
+  position: absolute;
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 100%;
+  background-color: #6e6e6e;
+  left: 0px;
+  top: 13px;
+}
+.beny_tm_modalbox_service .in_list ul li:last-child {
+  margin-bottom: 0px;
+}
+.beny_tm_modalbox_service .in_list ul li p {
+  margin-bottom: 0px;
+}
+
+/*---------------------------------------------------*/
+/*	08) BENY PORTFOLIO
+/*---------------------------------------------------*/
+.list_inner.video {
+  cursor: pointer;
+  .overlay {
+    pointer-events: all;
+    cursor: pointer;
+  }
+}
+.beny_tm_portfolio {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  background-color: #f9f9fc;
+  padding: 120px 0px 90px;
+}
+.beny_tm_portfolio .portfolio_list {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  padding-top: 60px;
+}
+.beny_tm_portfolio ul {
+  margin: 0px 0px 0px -30px;
+  list-style-type: none;
+}
+.beny_tm_portfolio ul li {
+  margin: 0px 0px 30px 0px;
+  width: 33.3333%;
+  padding-left: 30px;
+  float: left;
+}
+.beny_tm_portfolio ul li .list_inner {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  a {
+    display: block;
+    overflow: hidden;
+  }
+  img {
+    width: 100%;
+    transition: all 1s cubic-bezier(0, 0, 0.1, 1);
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: rgba(0, 0, 0, 0.85);
+    opacity: 0;
+    visibility: hidden;
+    border-radius: 8px;
+    transition: all 0.5s cubic-bezier(0, 0, 0.1, 1);
+    pointer-events: none;
+  }
+
+  &:hover {
+    a {
+      img {
+        transform: scale(1.2);
+      }
+    }
+    &:after {
+      opacity: 1;
+      visibility: visible;
+    }
+    h3 {
+      color: #f52225;
+    }
+  }
+}
+
+.css-1eqfn0t {
+  border-radius: 10px !important;
+}
+.beny_tm_portfolio .placeholder {
+  min-width: 100%;
+  position: relative;
+  opacity: 0;
+}
+
+.beny_tm_portfolio .overlay {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  visibility: hidden;
+  border-radius: 8px;
+  transition: all 1s cubic-bezier(0, 0, 0.1, 1);
+  pointer-events: none;
+}
+.beny_tm_portfolio ul li .list_inner:hover .overlay {
+  opacity: 1;
+  visibility: visible;
+}
+.beny_tm_portfolio .svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 1s cubic-bezier(0, 0, 0.1, 1);
+  pointer-events: none;
+  z-index: 5;
+  &.popup {
+    pointer-events: all;
+    cursor: pointer !important;
+  }
+}
+.beny_tm_portfolio ul li .list_inner:hover .svg {
+  opacity: 1;
+  visibility: visible;
+}
+.beny_tm_portfolio .title {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 1;
+  padding: 20px 40px 35px 40px;
+  text-decoration: none;
+  h3 {
+    transition: 0.3s;
+  }
+}
+
+.beny_tm_portfolio .title h3 {
+  font-weight: 600;
+  font-size: 22px;
+  color: #fff;
+  opacity: 0;
+  visibility: hidden;
+  position: relative;
+  top: 10px;
+  transition: all 0.4s;
+  &:hover {
+    letter-spacing: 1px;
+  }
+}
+.beny_tm_portfolio .title span {
+  font-size: 16px;
+  color: #fff;
+  opacity: 0;
+  visibility: hidden;
+  position: relative;
+  top: 10px;
+  transition: all 0.4s;
+}
+.beny_tm_portfolio ul li .list_inner:hover .title h3 {
+  opacity: 1;
+  visibility: visible;
+  top: 0px;
+}
+.beny_tm_portfolio ul li .list_inner:hover .title span {
+  opacity: 1;
+  visibility: visible;
+  top: 0px;
+  transition-delay: 0.05s;
+}
+.creative-portfolio-list {
+  display: flex;
+  align-items: center;
+  li {
+    width: auto !important;
+    cursor: pointer !important;
+    @media screen and (max-width: 767px) {
+      padding-right: 15px;
+    }
+    transition: 0.3s;
+    &.react-tabs__tab--selected {
+      color: #f52225;
+    }
+  }
+}
+/*---------------------------------------------------*/
+/*	09) BENY TESTIMONIALS
+/*---------------------------------------------------*/
+
+.beny_tm_testimonials {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  padding-bottom: 120px;
+  padding-top: 120px;
+}
+.beny_tm_testimonials .testimonials_list {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  padding-top: 60px;
+  position: relative;
+}
+.beny_tm_testimonials ul {
+  margin: 0px;
+  list-style-type: none;
+  position: relative;
+}
+.beny_tm_testimonials .item {
+  margin: 0px;
+  list-style-type: none;
+}
+.beny_tm_testimonials .item .list_inner {
+  width: 100%;
+  max-width: 75%;
+  height: auto;
+  clear: both;
+  margin: 0px auto;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  @media screen and (max-width: 1040px) {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 1040px) {
+  .beny_tm_testimonials .item {
+    .list_inner {
+      flex-direction: column;
+    }
+    .right {
+      text-align: center;
+      .details {
+        .job {
+          padding-left: 0 !important;
+          padding-top: 0 !important;
+        }
+        h3 {
+          span {
+            padding-left: 0 !important;
+            &:before {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.beny_tm_testimonials .item .left {
+  position: relative;
+  width: 30%;
+}
+.beny_tm_testimonials .item .left img {
+  min-width: 100%;
+  position: relative;
+  opacity: 0;
+}
+.beny_tm_testimonials .item .left .main {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  opacity: 0;
+  transition: all 1s ease;
+  transform: scale(1.4) translateZ(0);
+}
+.beny_tm_testimonials
+  .slick-slide.slick-active.slick-current
+  .item
+  .left
+  .main {
+  opacity: 1;
+  transition: all 1s 0.3s ease;
+  transform: scale(1) translateZ(0);
+}
+.beny_tm_testimonials .item .right {
+  width: 70%;
+  margin-left: 60px;
+  position: relative;
+  padding: 20px 0px 0px 25px;
+}
+
+.beny_tm_testimonials .item .right .svg {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.beny_tm_testimonials .item .right .text {
+  font-size: 20px;
+  margin-bottom: 35px;
+}
+.beny_tm_testimonials .item .right .text,
+.beny_tm_testimonials .item .right .details {
+  opacity: 0;
+  transition: all 1s 0.3s ease;
+  transform: translateY(20px);
+}
+.beny_tm_testimonials .item .right .details {
+  transform: translateY(40px);
+}
+.beny_tm_testimonials
+  .slick-slide.slick-active.slick-current
+  .item
+  .right
+  .text,
+.beny_tm_testimonials
+  .slick-slide.slick-active.slick-current
+  .item
+  .right
+  .details {
+  transform: translateY(0);
+  opacity: 1;
+}
+.beny_tm_testimonials .item .right .details {
+  width: 100%;
+  float: left;
+}
+.beny_tm_testimonials .item .right .details h3 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  color: #0f172a;
+  display: inline-block;
+}
+.beny_tm_testimonials .item .right .details h3 span {
+  position: relative;
+  padding-left: 130px;
+}
+.beny_tm_testimonials .item .right .details h3 span:before {
+  position: absolute;
+  content: "";
+  width: 100px;
+  height: 2px;
+  background-color: #f52225;
+  left: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.beny_tm_testimonials .item .right .details .job {
+  font-family: "DM Sans", sans-serif;
+  font-size: 18px;
+  display: block;
+  padding-left: 130px;
+  padding-top: 7px;
+}
+.beny_tm_testimonials .slick-arrow {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  display: inline-block;
+  border: 1px solid #6e6e6e;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  @media screen and (max-width: 767px) {
+    display: none !important;
+  }
+  &::before {
+    display: none;
+  }
+  &:after {
+    content: url(../../arrow.png);
+    transition: 0.3s;
+  }
+  &:hover {
+    &:after {
+      filter: invert(1);
+    }
+  }
+  &.slick-prev {
+    &:after {
+      transform: rotate(180deg);
+      display: block;
+    }
+  }
+}
+.beny_tm_testimonials .slick-arrow:hover {
+  border-color: #f52225;
+  background-color: #f52225;
+}
+.beny_tm_testimonials .slick-prev {
+  left: 0px;
+}
+.beny_tm_testimonials .left_nav .icon {
+  transform: rotate(180deg);
+  margin-left: -10px;
+}
+.beny_tm_testimonials .slick-next {
+  right: 0px;
+}
+.beny_tm_testimonials .icon {
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  background-color: #6e6e6e;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50px;
+}
+.beny_tm_testimonials .icon:before {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 2px;
+  background-color: #6e6e6e;
+  border-radius: 50px;
+  transform: rotate(45deg);
+  right: 0px;
+  top: -4px;
+}
+.beny_tm_testimonials .icon:after {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 2px;
+  background-color: #6e6e6e;
+  border-radius: 50px;
+  transform: rotate(-45deg);
+  right: 0px;
+  bottom: -4px;
+}
+.beny_tm_testimonials .left_nav:hover .icon {
+  background-color: #fff;
+}
+.beny_tm_testimonials .right_nav:hover .icon {
+  background-color: #fff;
+}
+.beny_tm_testimonials .left_nav:hover .icon:after,
+.beny_tm_testimonials .left_nav:hover .icon:before {
+  background-color: #fff;
+}
+.beny_tm_testimonials .right_nav:hover .icon:after,
+.beny_tm_testimonials .right_nav:hover .icon:before {
+  background-color: #fff;
+}
+
+/*---------------------------------------------------*/
+/*	10) BENY NEWS
+/*---------------------------------------------------*/
+
+.beny_tm_news {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  background-color: #f9f9fc;
+  padding: 120px 0px 90px 0px;
+}
+.beny_tm_news .news_list {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  padding-top: 60px;
+}
+.beny_tm_news ul {
+  margin: 0px 0px 0px -30px;
+  list-style-type: none;
+}
+.beny_tm_news ul li {
+  margin: 0px 0px 30px 0px;
+  width: 33.3333%;
+  padding-left: 30px;
+  float: left;
+}
+.beny_tm_news ul li .list_inner {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  position: relative;
+}
+.beny_tm_news ul li .image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  height: 383px;
+  cursor: pointer;
+}
+.beny_tm_news ul li .image img {
+  position: relative;
+  min-width: 100%;
+  opacity: 0;
+}
+.beny_tm_news ul li .image .main {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  transition: all 1s cubic-bezier(0, 0, 0.1, 1);
+}
+.beny_tm_news ul li .image:hover .main {
+  transform: scale(1.1) rotate(3deg);
+}
+.beny_tm_news ul li .details {
+  width: 100%;
+  float: left;
+  padding-top: 9px;
+}
+.beny_tm_news ul li .details span {
+  font-size: 16px;
+  display: inline-block;
+}
+.beny_tm_news ul li .details span a {
+  text-decoration: none;
+  color: #6e6e6e;
+  position: relative;
+  display: inline-block;
+
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.beny_tm_news ul li .details span a:hover {
+  color: #f52225;
+}
+.beny_tm_news ul li .details span a:before {
+  position: relative;
+  content: ".";
+  font-size: 40px;
+  top: -3px;
+  color: #6e6e6e;
+  padding: 0px 5px;
+}
+.beny_tm_news ul li .details .title {
+  text-decoration: none;
+  color: #0f172a;
+  margin-top: 5px;
+  font-size: 22px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.beny_tm_news ul li .details .title:hover {
+  color: #f52225;
+}
+.beny_tm_modalbox_service .description_wrap::-webkit-scrollbar,
+.beny_tm_modalbox_news .description_wrap::-webkit-scrollbar {
+  width: 11px;
+}
+.beny_tm_modalbox_service .description_wrap,
+.beny_tm_modalbox_news .description_wrap {
+  scrollbar-width: thin;
+  scrollbar-color: #999 #fff;
+}
+.beny_tm_modalbox_service .description_wrap:-webkit-scrollbar-track,
+.beny_tm_modalbox_news .description_wrap:-webkit-scrollbar-track {
+  background: #fff;
+}
+.beny_tm_modalbox_service .description_wrap::-webkit-scrollbar-thumb,
+.beny_tm_modalbox_news .description_wrap::-webkit-scrollbar-thumb {
+  background-color: #999;
+  border-radius: 6px;
+  border: 3px solid #fff;
+}
+
+.beny_tm_modalbox_news .container {
+  height: 100vh;
+}
+
+.beny_tm_modalbox_news .close {
+  position: fixed;
+  left: 100%;
+  top: 0px;
+  margin-left: 40px;
+  z-index: 111111;
+}
+.beny_tm_modalbox_news .close a {
+  text-decoration: none;
+  color: #fff;
+}
+.beny_tm_modalbox_news .close .svg {
+  width: 50px;
+  height: 50px;
+}
+.beny_tm_modalbox_news .description_wrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  padding: 50px;
+  overflow-y: scroll;
+}
+.beny_tm_modalbox_news .details {
+  width: 100%;
+  float: left;
+  margin-bottom: 20px;
+}
+.beny_tm_modalbox_news .description_wrap .image {
+  position: relative;
+  height: 450px;
+  margin-bottom: 40px;
+  @media only screen and (max-width: 575px) {
+    height: 250px;
+  }
+}
+.beny_tm_modalbox_news .description_wrap .image img {
+  min-width: 100%;
+  opacity: 0;
+}
+.beny_tm_modalbox_news .description_wrap .image .main {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.beny_tm_modalbox_news .details .title {
+  font-weight: 600;
+  font-size: 23px;
+  margin-bottom: 9px;
+}
+.beny_tm_modalbox_news .details span {
+  font-size: 16px;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+.beny_tm_modalbox_news .details span a {
+  text-decoration: none;
+  color: #6e6e6e;
+  position: relative;
+  display: inline-block;
+}
+.beny_tm_modalbox_news .details span a:before {
+  position: relative;
+  content: ".";
+  font-size: 40px;
+  top: -3px;
+  color: #6e6e6e;
+  padding: 0px 5px;
+}
+.beny_tm_news .main_content {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  z-index: -11;
+  display: none;
+}
+body.modal {
+  overflow-y: hidden;
+}
+.beny_tm_modalbox_news .main_content {
+  width: 100%;
+  float: left;
+}
+.beny_tm_modalbox_news .main_content .descriptions {
+  width: 100%;
+  float: left;
+  margin-bottom: 15px;
+}
+// .beny_tm_modalbox_news .main_content .descriptions .bigger {
+//   color: #888;
+//   font-size: 20px;
+//   margin-bottom: 31px;
+// }
+.beny_tm_modalbox_news .main_content .descriptions p {
+  margin-bottom: 22px;
+}
+.beny_tm_modalbox_news .main_content .quotebox {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.beny_tm_modalbox_news .main_content .quotebox p {
+  font-size: 20px;
+  font-style: italic;
+  margin-bottom: 23px;
+  border-left: 2px solid #f52225;
+  padding-left: 30px;
+  color: #000;
+}
+.beny_tm_modalbox_news .main_content .icon {
+  position: absolute;
+  left: 0px;
+  top: 10px;
+}
+.beny_tm_modalbox_news .main_content .icon .svg {
+  width: 50px;
+  height: 50px;
+}
+.beny_tm_modalbox_news .news_share {
+  width: 100%;
+  height: auto;
+  clear: both;
+  display: flex;
+  align-items: center;
+}
+.beny_tm_modalbox_news .news_share span {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-style: italic;
+  padding-right: 20px;
+  color: #000;
+}
+.beny_tm_modalbox_news .news_share ul {
+  margin: 0px;
+  list-style-type: none;
+  position: relative;
+  display: flex;
+}
+.beny_tm_modalbox_news .news_share ul li {
+  margin: 0px 12px 0px 0px;
+  display: inline-block;
+}
+.beny_tm_modalbox_news .news_share ul li a {
+  text-decoration: none;
+  color: #000;
+  transition: all 0.3s ease;
+  display: flex;
+}
+.beny_tm_modalbox_news .news_share ul li a {
+  svg {
+    transition: 0.3s;
+  }
+  &:hover {
+    svg {
+      transform: translateY(-3px);
+    }
+  }
+}
+.beny_tm_modalbox_news .news_share ul li a:hover svg {
+  color: #f52225;
+}
+.beny_tm_modalbox_news .news_share ul li .svg {
+  width: 15px;
+  height: 15px;
+}
+
+/*---------------------------------------------------*/
+/*	11) BENY CONTACT
+/*---------------------------------------------------*/
+
+.beny_tm_contact {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  padding-bottom: 120px;
+  padding-top: 120px;
+}
+.beny_tm_contact .contact_inner {
+  width: 100%;
+  height: auto;
+  clear: both;
+  display: flex;
+}
+.beny_tm_contact .left {
+  width: 50%;
+  padding-right: 100px;
+}
+.beny_tm_contact .short_list {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  padding-top: 45px;
+}
+.beny_tm_contact .short_list ul {
+  margin: 0px;
+  list-style-type: none;
+}
+.beny_tm_contact .short_list ul li {
+  margin: 0px 0px 30px 0px;
+  width: 100%;
+  float: left;
+  position: relative;
+  padding-left: 42px;
+}
+.beny_tm_contact .short_list ul li:last-child {
+  margin-bottom: 0px;
+}
+.beny_tm_contact .short_list ul li .svg {
+  width: 25px;
+  height: 25px;
+  fill: none;
+  position: absolute;
+  left: 0px;
+  top: 2px;
+}
+.beny_tm_contact .short_list ul li a {
+  text-decoration: none;
+  color: #6e6e6e;
+}
+.beny_tm_contact .right {
+  width: 50%;
+  padding-left: 100px;
+}
+.beny_tm_contact .right .title {
+  widows: 100%;
+  float: left;
+  margin-bottom: 40px;
+}
+.beny_tm_contact .right .title p {
+  font-size: 25px;
+  line-height: 1.6;
+}
+.beny_tm_contact .right .title span {
+  color: #0f172a;
+  font-weight: 600;
+}
+
+.beny_tm_contact .fields {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+}
+.beny_tm_contact .first_row {
+  width: 100%;
+  margin-bottom: 53px;
+}
+.beny_tm_contact .second {
+  width: 100%;
+  display: flex;
+  margin-bottom: 58px;
+}
+.beny_tm_contact .second > div {
+  width: 50%;
+}
+.beny_tm_contact .second > div:first-child {
+  padding-right: 15px;
+}
+.beny_tm_contact .second > div:last-child {
+  padding-left: 15px;
+}
+.beny_tm_contact .third {
+  width: 100%;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.contact_form {
+  .invalid-feedback {
+    color: #f52225;
+    text-align: left;
+    font-weight: 400;
+    font-size: 14px;
+  }
+}
+
+.beny_tm_contact input {
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-bottom: 1px solid #cbd3d9;
+  background-color: transparent;
+  font-size: 16px;
+  color: #6e6e6e;
+  font-weight: 500;
+  font-family: "DM Sans", sans-serif;
+  padding-left: 0px !important;
+  padding-bottom: 15px;
+}
+.beny_tm_contact input:focus {
+  outline: none;
+  border-bottom-color: #0f172a;
+  background-color: transparent;
+}
+.beny_tm_contact textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #cbd3d9;
+  background-color: transparent;
+  font-size: 16px;
+  color: #6e6e6e;
+  font-weight: 500;
+  font-family: "DM Sans", sans-serif;
+  height: 44px;
+  resize: none;
+  padding-left: 0px !important;
+  padding-bottom: 16px;
+}
+.beny_tm_contact textarea:focus {
+  outline: none;
+  border-bottom-color: #0f172a;
+  background-color: transparent;
+}
+.beny_tm_contact .empty_notice {
+  color: #f52225;
+  margin-bottom: 7px;
+  display: none;
+  text-align: left;
+  font-weight: 500;
+}
+.beny_tm_contact .contact_error {
+  color: #f52225;
+  text-align: left;
+  font-weight: 500;
+}
+.beny_tm_contact .returnmessage {
+  color: #3a00ff;
+  margin-bottom: 7px;
+  text-align: left;
+  font-weight: 500;
+}
+
+/*---------------------------------------------------*/
+/*	12) BENY COPYRIGHT
+/*---------------------------------------------------*/
+
+.beny_tm_copyright {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  background-color: #191c26;
+  padding: 30px 0px;
+}
+.beny_tm_copyright .inner {
+  width: 100%;
+  text-align: center;
+}
+.beny_tm_copyright .copy p {
+  color: #fff;
+  font-size: 16px;
+}
+.beny_tm_totop {
+  position: relative;
+  overflow: hidden;
+  background-color: #f52225;
+  padding: 22px;
+  border-radius: 3px;
+  display: inline-block;
+}
+.beny_tm_totop:after {
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  content: "";
+  border: 5px solid transparent;
+  border-bottom-color: #fff;
+  top: 14px;
+  left: 17px;
+  z-index: 2;
+}
+
+/*---------------------------------------------------*/
+/*	13) BENY CURSOR
+/*---------------------------------------------------*/
+
+.mouse-cursor {
+  position: fixed;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  border-radius: 50%;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  visibility: hidden;
+}
+.cursor-inner {
+  margin-left: -3px;
+  margin-top: -3px;
+  width: 6px;
+  height: 6px;
+  z-index: 100;
+  background-color: #f52225;
+  -webkit-transition: width 0.3s ease-in-out, height 0.3s ease-in-out,
+    margin 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out, height 0.3s ease-in-out,
+    margin 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+.cursor-inner.cursor-hover {
+  margin-left: -40px;
+  margin-top: -40px;
+  width: 80px;
+  height: 80px;
+  background-color: #f52225;
+  opacity: 0.3;
+}
+.cursor-outer {
+  margin-left: -15px;
+  margin-top: -15px;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #f52225;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  z-index: 100;
+  opacity: 0.5;
+  -webkit-transition: all 0.08s ease-out;
+  transition: all 0.08s ease-out;
+}
+.cursor-outer.cursor-hover {
+  opacity: 0;
+}
+.beny_tm_all_wrap[data-magic-cursor="hide"] .mouse-cursor {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  z-index: -1111;
+}
+
+/*---------------------------------------------------*/
+/*	BENY INTRO
+/*---------------------------------------------------*/
+
+.beny_tm_intro_wrapper {
+  width: 100%;
+  height: auto;
+  float: left;
+}
+.beny_tm_intro_hero {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  float: left;
+  margin-bottom: 140px;
+}
+.beny_tm_intro_hero .image {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.beny_tm_intro_hero .details {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  padding: 0px 20px;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.beny_tm_intro_hero .details p {
+  font-size: 30px;
+  font-weight: 500;
+  color: #fff;
+  padding-top: 35px;
+  padding-bottom: 40px;
+}
+.beny_tm_intro_wrapper .intro_title {
+  width: 100%;
+  float: left;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.beny_tm_intro_wrapper .intro_title {
+  span {
+    line-height: 28px;
+    font-weight: 400;
+    font-size: 16px;
+    background: #444;
+    display: inline-block;
+    color: #fff;
+    padding: 0 25px;
+    margin-bottom: 10px;
+  }
+  p {
+    padding: 0 19%;
+    margin-top: 20px;
+    @media screen and (max-width: 1199px) {
+      padding: 0 10%;
+    }
+    @media screen and (max-width: 575px) {
+      padding: 0;
+    }
+  }
+}
+.beny_tm_intro_wrapper .intro_title h3 {
+  font-size: 60px;
+  font-weight: 700;
+  color: #0f172a;
+}
+.beny_tm_intro_wrapper .intro_title p {
+  color: #6e6e6e;
+}
+.beny_tm_intro_wrapper .intro_list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding-top: 120px;
+  padding-bottom: 40px;
+  @media screen and (max-width: 1199px) {
+    padding-top: 80px;
+  }
+}
+.beny_tm_intro_wrapper .intro_list ul {
+  list-style-type: none;
+  margin-left: -50px;
+  margin-right: -50px;
+  @media screen and (max-width: 1199px) {
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-bottom: 20px;
+  }
+}
+.beny_tm_intro_wrapper .intro_list ul li {
+  float: left;
+  width: 50%;
+  margin-bottom: 80px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 10px;
+  @media screen and (max-width: 1199px) {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 30px;
+  }
+  @media screen and (max-width: 575px) {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+.beny_tm_intro_wrapper .intro_list ul li .list_inner {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  position: relative;
+  text-align: center;
+  top: 10px;
+  transition: all 0.3s ease;
+}
+.beny_tm_intro_wrapper .intro_list ul li .list_inner:hover {
+  top: 0px;
+}
+.beny_tm_intro_wrapper .intro_list ul li .list_inner img {
+  box-shadow: 0px 0px 30px rgba(0, 18, 68, 0.2);
+  border-radius: 10px 10px 0 0;
+  @media screen and (min-width: 1600px) {
+    min-height: 555px;
+  }
+}
+.beny_tm_intro_wrapper .intro_list ul li .list_inner h3 {
+  color: #fff;
+  font-size: 20px;
+  background: #333;
+  padding: 15px 10px;
+  font-weight: 400;
+  border-radius: 0 0 10px 10px;
+}
+.beny_tm_intro_wrapper .go_purchase {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  background-color: #111319;
+  text-align: center;
+  padding: 100px 20px;
+}
+.beny_tm_intro_wrapper .go_purchase h3 {
+  color: #fff;
+  max-width: 600px;
+  font-weight: 600;
+  margin: 0 auto;
+  font-size: 35px;
+  display: block;
+  padding: 10px 0 30px;
+  letter-spacing: 1px;
+  line-height: 45px;
+  text-transform: initial;
+  .theme-color {
+    color: #f52225;
+  }
+}
+.beny_tm_intro_wrapper .go_purchase h6 {
+  color: #efefef;
+  margin-bottom: 10px;
+}
+.beny_tm_intro_wrapper .intro_copyright {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  background-color: #191c26;
+  text-align: center;
+  padding: 20px 0px;
+}
+.beny_tm_intro_wrapper .intro_copyright p {
+  font-size: 14px;
+  font-weight: 500;
+  color: #faf9fd;
+}
+.beny_tm_intro_wrapper .intro_copyright p a {
+  text-decoration: none;
+  color: #fff;
+
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.beny_tm_intro_wrapper .intro_copyright p a:hover {
+  color: #f52225;
+}
+body.intro #preloader:before,
+body.intro #preloader:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  z-index: -1;
+  background-color: #fff;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+body.intro #preloader:after {
+  left: auto;
+  right: 0;
+}
+body.intro .loader_line:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 1px;
+  height: 0%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  background-color: #555;
+  -webkit-animation: lineheight 1000ms ease-in-out 0s forwards;
+  -o-animation: lineheight 1000ms ease-in-out 0s forwards;
+  animation: lineheight 1000ms ease-in-out 0s forwards;
+}
+body.intro .loader_line:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  background-color: #ddd;
+  -webkit-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  transform: translateY(-100%);
+  -webkit-animation: lineround 1200ms linear 0s infinite;
+  -o-animation: lineround 1200ms linear 0s infinite;
+  animation: lineround 1200ms linear 0s infinite;
+  animation-delay: 2000ms;
+}
+
+/*---------------------------------------------------*/
+/*	14) BENY MEDIA QUERIES (FOR SMALL DEVIVES)
+/*---------------------------------------------------*/
+
+@media (max-width: 1200px) {
+  .beny_tm_modalbox_news .close {
+    margin-left: 20px;
+  }
+
+  .beny_tm_modalbox_service .close {
+    margin-left: 20px;
+  }
+}
+@media (max-width: 1040px) {
+  body {
+    font-size: 16px;
+  }
+
+  .beny_tm_mobile_menu {
+    display: block;
+  }
+  .beny_tm_hero .content .job {
+    font-size: 60px;
+  }
+  .beny_tm_hero .social {
+    display: none;
+  }
+
+  .beny_tm_hero .content .text {
+    margin-bottom: 25px;
+  }
+  .beny_tm_button a {
+    font-size: 16px;
+    padding: 7px 30px;
+  }
+  .beny_tm_title_holder h2 {
+    font-size: 50px;
+  }
+  .beny_tm_about .about_inner {
+    flex-direction: column;
+    align-items: baseline;
+  }
+  .beny_tm_about .about_inner .left {
+    width: 100%;
+    padding: 0px;
+    margin-bottom: 50px;
+  }
+  .beny_tm_about .about_inner .right {
+    width: 100%;
+    padding: 0px;
+  }
+  .beny_tm_resume .resume_inner {
+    flex-direction: column;
+    align-items: baseline;
+  }
+  .beny_tm_resume .resume_inner .skills {
+    width: 100%;
+    padding: 0px;
+    margin-bottom: 75px;
+  }
+  .beny_tm_resume .education {
+    width: 100%;
+    padding: 0px;
+    .year {
+      font-size: 16px;
+    }
+  }
+  .beny_tm_resume .resume_title span:before {
+    display: none;
+  }
+  .beny_tm_services ul li {
+    width: 50%;
+  }
+  .beny_tm_portfolio ul li {
+    width: 50%;
+  }
+
+  .beny_tm_testimonials .item .right {
+    margin-left: 0px;
+    width: 100%;
+  }
+  .beny_tm_news ul li {
+    width: 50%;
+  }
+  .beny_tm_contact .contact_inner {
+    flex-direction: column;
+    align-items: baseline;
+  }
+  .beny_tm_contact .left {
+    width: 100%;
+    padding: 0px;
+    margin-bottom: 50px;
+  }
+  .beny_tm_contact .right {
+    width: 100%;
+    padding: 0px;
+  }
+}
+
+@media (max-width: 991px) {
+  .beny_tm_topbar.animate .in {
+    padding: 20px 15px;
+  }
+}
+@media (max-width: 767px) {
+  .beny_tm_topbar {
+    display: none;
+  }
+
+  .beny_tm_hero .content .job {
+    font-size: 31px;
+  }
+  .beny_tm_title_holder h2 {
+    font-size: 30px;
+  }
+  .beny_tm_about .list ul {
+    margin: 0px;
+  }
+  .beny_tm_about .list ul li {
+    width: 100%;
+    padding-left: 0px;
+  }
+  .beny_tm_services ul {
+    margin: 0px;
+  }
+  .beny_tm_services ul li {
+    width: 100%;
+    padding-left: 0px;
+  }
+  .beny_tm_services ul li .list_inner {
+    padding: 30px;
+  }
+  .beny_tm_portfolio ul {
+    margin: 0px;
+  }
+  .beny_tm_portfolio ul li {
+    width: 100%;
+    padding-left: 0px;
+  }
+  .beny_tm_testimonials .item .right .details h3 span {
+    padding-left: 0px;
+  }
+  .beny_tm_testimonials .item .right .details h3 span:before {
+    display: none;
+  }
+  .beny_tm_testimonials .item .right .details .job {
+    padding-left: 0px;
+  }
+  .beny_tm_testimonials .item .right .text {
+    font-size: 16px;
+  }
+  .beny_tm_testimonials .item .right .details h3 {
+    font-size: 20px;
+  }
+  .beny_tm_testimonials .left_nav,
+  .beny_tm_testimonials .right_nav {
+    display: none;
+  }
+  .beny_tm_testimonials .item .list_inner {
+    max-width: 100%;
+  }
+  .beny_tm_news ul {
+    margin: 0px;
+  }
+  .beny_tm_news ul li {
+    width: 100%;
+    padding-left: 0px;
+  }
+  .beny_tm_contact .right .title p {
+    font-size: 22px;
+  }
+  .beny_tm_contact .second {
+    flex-direction: column;
+    align-items: baseline;
+  }
+  .beny_tm_contact .second > div {
+    width: 100%;
+  }
+  .beny_tm_contact .second > div:first-child {
+    padding: 0px;
+  }
+  .beny_tm_contact .second > div:last-child {
+    padding: 0px;
+  }
+  .container {
+    padding: 0px 20px;
+  }
+  .beny_tm_modalbox_news .description_wrap {
+    padding: 15px;
+  }
+
+  .beny_tm_modalbox_news .close .svg {
+    width: 20px;
+    height: 20px;
+  }
+  .beny_tm_modalbox_news .close {
+    margin-left: 0px;
+  }
+  .beny_tm_modalbox_service .description_wrap {
+    padding: 30px;
+  }
+
+  .beny_tm_modalbox_service .close .svg {
+    width: 20px;
+    height: 20px;
+  }
+  .beny_tm_modalbox_service .close {
+    margin-left: 0px;
+  }
+
+  .beny_tm_intro_wrapper .intro_title h3 {
+    font-size: 35px;
+  }
+
+  .beny_tm_intro_wrapper .go_purchase h3 {
+    font-size: 28px;
+  }
+}
+
+// go to about
+.go-to-next {
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  right: 0;
+  width: 35px;
+  margin: auto;
+  z-index: 10;
+  text-align: center;
+}
+.go-to-next a {
+  width: 35px;
+  height: 35px;
+  position: relative;
+  display: inline-block;
+  background: #f52225;
+  border-radius: 50%;
+  animation: down 1s linear infinite;
+  -webkit-animation: down 1s linear infinite;
+}
+.go-to-next a span {
+  border-top: 1px solid #ffffff;
+  border-right: 1px solid #ffffff;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: -3px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+@keyframes down {
+  0% {
+    top: 5px;
+    opacity: 0;
+  }
+  30% {
+    top: 15px;
+    opacity: 1;
+  }
+  100% {
+    top: 25px;
+    opacity: 0;
+  }
+}
+.tab_list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0 -10px;
+  li {
+    margin: 0 10px;
+    background: transparent;
+    padding: 5px 30px;
+    color: #6e6e6e;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+    border: 2px solid #6e6e6e;
+    @media screen and (max-width: 575px) {
+      padding: 5px 20px;
+      font-size: 13px;
+    }
+    &.react-tabs__tab--selected {
+      border-color: #f52225;
+      color: #fff;
+      background: #f52225;
+    }
+  }
+}
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.col-4,
+.col-6,
+.col-8 {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-top: 30px;
+}
+
+@media (min-width: 992px) {
+  .col-4 {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+  .col-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .col-8 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 66.66666667%;
+    width: 66.66666667%;
+  }
+}
+
+.resume-box-01,
+.beny_tm_resume .resume_inner .skills,
+.beny_tm_resume .education {
+  background: #ffffff;
+  border: 1px solid #f5f5f5;
+  box-shadow: 0px 0px 20px #f5f5f5;
+  padding: 35px;
+  border-radius: 6px;
+  height: 100%;
+  @media screen and (max-width: 991px) {
+    padding: 35px 20px;
+  }
+}
+.resume-box-01 h4,
+.skills h4,
+.edu_list h4 {
+  color: #000;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+.resume-box-01 {
+  h4 {
+    margin-bottom: 18px;
+  }
+  h6 {
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: italic;
+    margin-top: 7px;
+  }
+  .hr {
+    border-top: 1px solid #efefef;
+    margin: 18px 0;
+  }
+}
+.resume-box-01 h4 label,
+.skills h4 label,
+.edu_list h4 label {
+  background: #f7f7f7;
+  display: inline-block;
+  padding: 7px 18px;
+  border-radius: 4px;
+  margin: 0;
+}
+.resume-box-01 h4 label {
+  color: #f52225;
+}
+.resume-box-01 h5 {
+  color: #000;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.resume-box-01 span {
+  border-radius: 30px;
+  font-size: 16px;
+  display: block;
+  margin-top: 12px;
+  line-height: 20px;
+}
+.resume-box-01 p {
+  margin: 10px 0 0;
+  font-size: 16px;
+}
+
+.mobile-menu-wrapper {
+  display: none;
+  .mobile_menu-icon {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: 0;
+    list-style-type: none;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 99;
+    background: #fff;
+    width: 100%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.08%);
+
+    @media (max-width: 767px) {
+      justify-content: space-around;
+    }
+    @media (max-width: 575px) {
+      justify-content: space-between;
+    }
+
+    li {
+      a {
+        padding: 15px 12px;
+        display: flex;
+        cursor: pointer;
+        color: #6e6e6e;
+        flex-direction: column;
+        align-items: center;
+        font-size: 12px;
+        font-weight: 500;
+        text-decoration: none;
+        line-height: 1;
+        transition: 0.3s;
+        @media screen and (max-width: 360px) {
+          font-size: 10px;
+        }
+        @media screen and (max-width: 575px) {
+          padding: 15px 10px;
+        }
+        @media screen and (max-width: 350px) {
+          padding: 15px 8px;
+        }
+        svg {
+          fill: transparent;
+          width: 24px;
+          height: 24px;
+          margin-bottom: 5px;
+        }
+      }
+      &.current {
+        a {
+          color: #f52225 !important;
+        }
+      }
+    }
+  }
+  @media (max-width: 767px) {
+    display: block;
+  }
+}
+@media (max-width: 767px) {
+  .beny_tm_all_wrap {
+    padding-bottom: 65px;
+  }
+  .beny_tm_resume .main_title h3 {
+    font-size: 35px;
+  }
+  .beny_tm_about,
+  .beny_tm_contact,
+  .beny_tm_testimonials {
+    padding: 80px 0;
+  }
+  .beny_tm_about .about_inner {
+    margin-bottom: 80px;
+  }
+  .beny_tm_services,
+  .beny_tm_portfolio,
+  .beny_tm_news {
+    padding-bottom: 50px;
+    padding-top: 80px;
+  }
+}
+.description_wrap {
+  p {
+    font-size: 16px;
+  }
+}
+// scroll up
+.scroll_up {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 45px;
+  height: 45px;
+  z-index: 99;
+  cursor: pointer;
+}
+
+.beny_tm_all_wrap .beny_tm_intro_wrapper {
+  @media screen and (max-width: 767px) {
+    margin-bottom: -65px;
+  }
+}
+.react-parallax img {
+  object-fit: cover;
+}
+
+.d-none {
+  display: none;
+}
+
+.typer {
+  margin-bottom: 20px;
+  color: #f52225;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 991px) {
+  .typer {
+    font-size: 30px;
+  }
+  .frame-layout__particles.dark {
+    display: none;
+  }
+}
+@media screen and (max-width: 1499px) {
+  .d-sm-block {
+    display: block;
+  }
+}
+.sticker {
+  position: absolute;
+  background: #f52225;
+  color: #fff;
+  line-height: 1;
+  padding: 5px 15px;
+  border-radius: 0 10px 0 0;
+  top: 0;
+  right: 0;
+  z-index: 5;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.frame-layout__particles {
+  width: 100%;
+  height: 100%;
+  position: absolute !important;
+  z-index: 1 !important;
+  top: 0;
+  left: 0;
+}
+.tsparticles-canvas-el {
+  background-color: transparent !important;
+}
+.pr-30 {
+  padding-right: 30%;
+}
+.typer-toper {
+  span {
+    color: #fff !important;
+    &.typed-cursor {
+      color: #ddd !important;
+      font-weight: 500;
+    }
+  }
+  &.black {
+    span {
+      color: #222 !important;
+      @media screen and (max-width: 991px) {
+        color: #fff !important;
+      }
+      &.typed-cursor {
+        color: #555 !important;
+        @media screen and (max-width: 991px) {
+          color: #eee !important;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .beny_tm_topbar:not(.animate) {
+    .logo {
+      position: relative;
+      img {
+        display: none;
+      }
+      &::after {
+        content: "";
+        background-image: url(../../light.png);
+        width: 100px;
+        height: 44px;
+        position: absolute;
+        left: 0;
+        top: -17px;
+        background-repeat: no-repeat;
+        background-size: 81%;
+      }
+    }
+  }
+}
+
+.demo-fixed-wrapper {
+  width: 30px;
+  position: fixed;
+  z-index: 99;
+  right: 0px;
+  top: calc(50% - 55px);
+  .demo-button {
+    border-radius: 6px 0 0 6px;
+    background: #222;
+    box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+    transition: var(--transition);
+    position: relative;
+    z-index: 2;
+    font-size: 14px;
+    border: 0 none;
+    width: 100%;
+    min-width: 100%;
+    padding: 10px 0px 8px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  .text {
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: #fff;
+  }
+}
