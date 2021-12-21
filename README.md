@@ -1,27 +1,5 @@
-# Beny Personal Portfolio React Template
+Martei Duel Portfolio
 
-## Description
-Setup Procedure
-## Project setup
-```
-npm install
-```
+Orem, Utah 
 
-### Compiles and hot-reloads for development
-```
-npm run start
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration (vue-cli)
-See [Configuration Reference](https://cli.vuejs.org/config/).
-"# Porftfolio" 
+marteiwgc@gmail.com
