@@ -29,34 +29,34 @@ const skillsContent = [
     skillPercent: "80",
   },
   {
-    name: "Illustrator",
-    skillPercent: "60",
+    name: "Javascript/React",
+    skillPercent: "75",
   },
   {
-    name: "Photoshop",
+    name: "Wordpress",
     skillPercent: "70",
   },
   {
-    name: "Motion Graphy",
-    skillPercent: "80",
+    name: "Databases",
+    skillPercent: "70",
   },
 ];
 
 const awardContent = [
   {
-    awardYear: "2020",
-    degree: "Best Developer",
-    instituteName: "University Of Melbourne, NA",
+    awardYear: "2022",
+    degree: "Lead Developer",
+    instituteName: "Maven Software Development",
   },
   {
     awardYear: "2019",
-    degree: "Best Writter",
-    instituteName: "Online Typodev Soluation Ltd.",
+    degree: "Freelancer",
+    instituteName: "MTYTEC",
   },
   {
-    awardYear: "2007",
-    degree: "Best Freelancer ",
-    instituteName: "Fiver & Upwork Level 2 & Top Rated",
+    awardYear: "2018",
+    degree: "Junior Developer ",
+    instituteName: "Bottega University",
   },
 ];
 const experienceContent = [
@@ -83,8 +83,7 @@ const experienceContent = [
     jobType: "Full Time",
     year: "2013 - 2016",
     compnayName: "World Games and Computers",
-    descriptions:
-      `Increased sales by 30%. Launched the company’s market campaign. Develop community relationships with local business managers and owners.
+    descriptions: `Increased sales by 30%. Launched the company’s market campaign. Develop community relationships with local business managers and owners.
       Manage social media studio platform with daily posts and engaging information.`,
     animationDealy: "",
   },
@@ -180,7 +179,7 @@ const SkillsAnimation = () => {
                   <div className="education ">
                     <div className="edu_list">
                       <h4>
-                        <label>Awards</label>
+                        <label>Path</label>
                       </h4>
                       <ul>
                         {awardContent.map((val, i) => (

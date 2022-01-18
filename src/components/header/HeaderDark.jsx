@@ -31,7 +31,7 @@ const Header = () => {
           <div className="topbar_inner">
             <div className="logo">
               <Link to="/">
-                <img src="img/logo/light.png" alt="brand" />
+                {/* <img src="img/logo/light.png" alt="brand" /> */}
               </Link>
             </div>
             <div className="menu">
@@ -40,8 +40,8 @@ const Header = () => {
                 items={[
                   "home",
                   "about",
-                  "service",
-                  "portfolio",
+                  "services",
+                  // "portfolio",
                   // "news",
                   "contact",
                 ]}
@@ -62,22 +62,22 @@ const Header = () => {
                 </li>
                 <li>
                   <a href="#service">
-                    <span className="first">Service</span>
-                    <span className="second">Service</span>
+                    <span className="first">Services</span>
+                    <span className="second">Services</span>
                   </a>
                 </li>
-                <li>
+                {/* <li>
                   <a href="#portfolio">
                     <span className="first">Portfolio</span>
                     <span className="second">Portfolio</span>
                   </a>
-                </li>
-                <li>
+                </li> */}
+                {/* <li>
                   <a href="#news">
                     <span className="first">News</span>
                     <span className="second">News</span>
                   </a>
-                </li>
+                </li> */}
                 <li>
                   <a href="#contact">
                     <span className="first">Contact</span>
@@ -85,7 +85,11 @@ const Header = () => {
                   </a>
                 </li>
                 <li>
-                  <a  href="https://calendly.com/marteiduel" target={"_blank"} rel="noreferrer">
+                  <a
+                    href="https://calendly.com/marteiduel"
+                    target={"_blank"}
+                    rel="noreferrer"
+                  >
                     <span className="wrapper">
                       <span className="first">Schedule</span>
                       <span className="second">Schedule</span>

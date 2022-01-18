@@ -14,11 +14,11 @@ const Routes = () => {
       <Router>
         <ScrollTopBehaviour />
         <Switch>
-          <Route exact path="/" component={Preview} />
-          <Route path="/home-light-animation" component={HomeLightAnimation} />
+          <Route exact path="/" component={HomeDarkAnimation} />
+          {/* <Route path="/home-light-animation" component={HomeLightAnimation} /> */}
           <Route path="/home-dark-animation" component={HomeDarkAnimation} />
-          <Route path="/home-typer-creative" component={HomeTyperCreative} />
-          <Route path="/home-parallax-typer" component={HomeParallaxTyper} />
+          {/* <Route path="/home-typer-creative" component={HomeTyperCreative} /> */}
+          {/* <Route path="/home-parallax-typer" component={HomeParallaxTyper} /> */}
           <Route component={NotFound} />
         </Switch>
       </Router>

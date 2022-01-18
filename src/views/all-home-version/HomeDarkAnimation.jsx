@@ -40,9 +40,7 @@ const HomeDarkAnimation = () => {
           <div className="beny_tm_title_holder">
             <span>About Me</span>
             <h2>About Me</h2>
-            <p>
-              Software developer 
-            </p>
+            <p>Software developer</p>
           </div>
           {/* End .beny_tm_title */}
           <About />
@@ -57,10 +55,7 @@ const HomeDarkAnimation = () => {
           <div className="beny_tm_title_holder">
             <span>Services</span>
             <h2>I provide wide range of digital services</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet,
-              egestas. Id fermentum nullam ipsum massa.
-            </p>
+            <p>Let's chat about your plans and your proyect.</p>
           </div>
           {/* End beny_tm_title */}
           <Service />
@@ -69,24 +64,24 @@ const HomeDarkAnimation = () => {
       {/* /SERVICES */}
 
       {/* PORTFOLIO */}
-      <div className="beny_tm_portfolio" id="portfolio">
+      {/* <div className="beny_tm_portfolio" id="portfolio">
         <div className="container">
           <div className="beny_tm_title_holder">
             <span>Portfolio</span>
             <h2>My Portfolio</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet,
-              egestas. Id fermentum nullam ipsum massa.
+              Take a quick look into my work. Ask my about things you don't see
+              here. Reach out!
             </p>
-          </div>
-          {/* End beny_tm_title */}
-          <Portfolio />
+          </div> */}
+      {/* End beny_tm_title */}
+      {/* <Portfolio />
         </div>
-      </div>
+      </div> */}
       {/* /PORTFOLIO */}
 
       {/* TESTIMONIALS */}
-      <div className="beny_tm_testimonials">
+      {/* <div className="beny_tm_testimonials">
         <div className="container">
           <div className="beny_tm_title_holder">
             <span>Testimonials</span>
@@ -95,9 +90,9 @@ const HomeDarkAnimation = () => {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet,
               egestas. Id fermentum nullam ipsum massa.
             </p>
-          </div>
-          {/* End beny_tm_title */}
-          <div
+          </div> */}
+      {/* End beny_tm_title */}
+      {/* <div
             className="testimonials_list"
             data-aos="fade-right"
             data-aos-duration="1200"
@@ -106,7 +101,7 @@ const HomeDarkAnimation = () => {
             <Testimonial />
           </div>
         </div>
-      </div>
+      </div> */}
       {/* /TESTIMONIALS */}
 
       {/* NEWS */}
@@ -120,8 +115,8 @@ const HomeDarkAnimation = () => {
               egestas. Id fermentum nullam ipsum massa.
             </p>
           </div>  */}
-          {/* End beny_tm_title */}
-           {/* <Blog /> 
+      {/* End beny_tm_title */}
+      {/* <Blog /> 
         </div>
       </div> */}
       {/* /NEWS */}
@@ -153,9 +148,9 @@ const HomeDarkAnimation = () => {
             >
               <div className="title">
                 <p>
-                  I'm always open to discussing product
+                  I'm always open to partnerships and
                   <br />
-                  <span>design work or partnerships.</span>
+                  <span>to discuss your ideas.</span>
                 </p>
               </div>
               <div className="fields">

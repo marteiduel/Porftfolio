@@ -27,7 +27,10 @@ const AboutDarkAnimation = () => {
           <div className="short">
             <h3>I'm Duel</h3>
             <h5>
-              A Lead <span className="theme-color">Software developer and Marketing Expert </span>
+              A Lead{" "}
+              <span className="theme-color">
+                Software developer and Marketing Expert{" "}
+              </span>
               based in <span className="theme-color">Utah</span>
             </h5>
             <p>
@@ -85,7 +88,7 @@ const AboutDarkAnimation = () => {
             </div>
             {/* End list */}
             <div className="beny_tm_button color-outline">
-              <a href="img/demo/MarteiResume.pdf" download>
+              <a href="img/demo/Martei_Resume.pdf" download>
                 <span className="wrapper">
                   <span className="first">Download CV</span>
                   <span className="second">Download CV</span>
