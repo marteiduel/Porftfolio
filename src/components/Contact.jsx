@@ -15,7 +15,12 @@ const Contact = () => {
 
   return (
     <>
-      <form className="contact_form" onSubmit={handleSubmit(onSubmit)}>
+      <form
+        action="https://formsubmit.co/marteiwgc@gmail.com"
+        method="POST"
+        className="contact_form"
+        // onSubmit={handleSubmit(onSubmit)}
+      >
         <div className="first_row">
           <input
             {...register("name", { required: true })}
