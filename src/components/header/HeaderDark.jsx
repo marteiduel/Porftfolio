@@ -66,12 +66,12 @@ const Header = () => {
                     <span className="second">Services</span>
                   </a>
                 </li>
-                <li>
+                {/* <li>
                   <a href="#portfolio">
                     <span className="first">Portfolio</span>
                     <span className="second">Portfolio</span>
                   </a>
-                </li>
+                </li> */}
                 {/* <li>
                   <a href="#news">
                     <span className="first">News</span>
