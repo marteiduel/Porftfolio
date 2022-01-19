@@ -5,7 +5,7 @@ const Address = () => {
     <ul>
       <li>
         <img className="svg" src="img/svg/phone.svg" alt="" />
-        <a href="Tel: 7614123224">(801)856-4685</a>
+        <a href="Tel: 7614123224">(801) 856-4685</a>
       </li>
       {/* End li */}
 
