@@ -6,7 +6,7 @@ const AboutDarkAnimation = () => {
     <>
       <div className="about_inner">
         <div className="left">
-          <img src="img/thumbs/1-1.jpg" alt="" />
+          <img src="img/demo/demo1.jpg" alt="" />
           <div
             className="image"
             data-aos="fade-right"
