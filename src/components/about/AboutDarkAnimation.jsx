@@ -25,7 +25,7 @@ const AboutDarkAnimation = () => {
           data-aos-delay="50"
         >
           <div className="short">
-            <h3>I'm Duel</h3>
+            <h3>Hi my name is Martei Duel</h3>
             <h5>
               A Lead{" "}
               <span className="theme-color">
