@@ -128,7 +128,7 @@ const Header = () => {
               <span>Serivce</span>
             </a>
           </li>
-          <li>
+          {/* <li>
             <a href="#portfolio">
               <FiGrid />
               <span>Portfolio</span>
@@ -139,7 +139,7 @@ const Header = () => {
               <FiCast />
               <span>News</span>
             </a>
-          </li>
+          </li> */}
           <li>
             <a href="#contact">
               <FiPhoneOutgoing />
