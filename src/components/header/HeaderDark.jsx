@@ -91,7 +91,7 @@ const Header = () => {
                     rel="noreferrer"
                   >
                     <span className="wrapper">
-                      <span className="first">Schedule</span>
+                      <span className="first">Schedule1</span>
                       <span className="second">Schedule</span>
                     </span>
                   </a>
