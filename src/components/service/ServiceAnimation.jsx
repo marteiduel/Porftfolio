@@ -60,7 +60,7 @@ const ServiceAnimation = () => {
                 <div className="description_wrap scrollable">
                   <div className="popup_informations">
                     <div className="image">
-                      <img src="img/thumbs/4-3.jpg" alt="" />
+                      <img src="img/service/web-development.jpg" alt="" />
                       <div
                         className="main"
                         style={{
@@ -167,7 +167,7 @@ const ServiceAnimation = () => {
                 <div className="description_wrap scrollable">
                   <div className="popup_informations">
                     <div className="image">
-                      <img src="img/thumbs/4-3.jpg" alt="" />
+                      <img src="img/service/branding.jpg" alt="" />
                       <div
                         className="main"
                         style={{
@@ -284,7 +284,7 @@ const ServiceAnimation = () => {
                 <div className="description_wrap scrollable">
                   <div className="popup_informations">
                     <div className="image">
-                      <img src="img/thumbs/4-3.jpg" alt="" />
+                      <img src="img/service/mobile.jpg" alt="" />
                       <div
                         className="main"
                         style={{
@@ -392,7 +392,7 @@ const ServiceAnimation = () => {
                 <div className="description_wrap scrollable">
                   <div className="popup_informations">
                     <div className="image">
-                      <img src="img/thumbs/4-3.jpg" alt="" />
+                      <img src="img/service/uiux.jpg" alt="" />
                       <div
                         className="main"
                         style={{
