@@ -1,0 +1,30 @@
+.portfoliotiles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.tile {
+  width: 15rem;
+  height: 100%;
+  margin: 4rem;
+}
+
+.tile-image {
+  border-radius: 10px;
+  height: 100%;
+}
+
+.title-image:hover {
+  cursor: pointer;
+}
+
+.title-link {
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
