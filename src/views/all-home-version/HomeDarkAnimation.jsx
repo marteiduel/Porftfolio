@@ -64,7 +64,7 @@ const HomeDarkAnimation = () => {
       {/* /SERVICES */}
 
       {/* PORTFOLIO */}
-      <div className="beny_tm_portfolio" id="portfolio">
+      {/* <div className="beny_tm_portfolio" id="portfolio">
         <div className="container">
           <div className="beny_tm_title_holder">
             <span>Portfolio</span>
@@ -74,10 +74,9 @@ const HomeDarkAnimation = () => {
               here. Reach out!
             </p>
           </div>
-          {/* End beny_tm_title */}
           <Portfolio />
         </div>
-      </div>
+      </div> */}
       {/* /PORTFOLIO */}
 
       {/* TESTIMONIALS */}
