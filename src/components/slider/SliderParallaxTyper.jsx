@@ -79,7 +79,7 @@ const SliderParallaxTyper = () => {
                   data-aos-delay="150"
                 >
                   I design and develop services for customers of all sizes,
-                  specializing in creating stylish, modern websites, web
+                  specializing in creating stylish and modern websites, web
                   services and online stores.
                 </p>
 

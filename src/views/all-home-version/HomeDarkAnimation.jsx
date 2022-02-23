@@ -54,8 +54,8 @@ const HomeDarkAnimation = () => {
         <div className="container">
           <div className="beny_tm_title_holder">
             <span>Services</span>
-            <h2>I provide wide range of digital services</h2>
-            <p>Let's chat about your plans and your proyect.</p>
+            <h2>I provide a wide range of digital services</h2>
+            <p>Let's chat about your plans and your project.</p>
           </div>
           {/* End beny_tm_title */}
           <Service />

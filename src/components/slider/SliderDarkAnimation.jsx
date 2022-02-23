@@ -63,8 +63,8 @@ const SliderDarkAnimation = () => {
               data-aos-duration="1200"
               data-aos-delay="100"
             >
-              I'm developer focused on crafting user‑friendly experiences, I am
-              passionate about building excellent software that increase profit
+              I'm a developer focused on crafting user‑friendly experiences, I am
+              passionate about building excellent software that increases profit
               for businesses.
             </p>
             <div

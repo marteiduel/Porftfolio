@@ -41,7 +41,7 @@ const SliderAnimation = () => {
             >
               <TextLoop>
                 <p className="loop-text lead">Software Developer</p>
-                <p className="loop-text lead">Maketer</p>
+                <p className="loop-text lead">Marketer</p>
                 <p className="loop-text lead">Social Media Manager</p>
               </TextLoop>
               <br /> <span>Based In America.</span>
@@ -52,7 +52,7 @@ const SliderAnimation = () => {
               data-aos-duration="1200"
               data-aos-delay="100"
             >
-              I'm developer focused on crafting user‑friendly experiences, I am
+              I'm a developer focused on crafting user‑friendly experiences, I am
               passionate about building excellent software that improves the
               lives of those around me.
             </p>
