@@ -31,7 +31,7 @@ const SliderDarkAnimation = () => {
         <div className="content">
           <div className="content_inner">
             <h3 className="name" data-aos="fade-up" data-aos-duration="1200">
-              Hi! I'm Martei Duelo
+              Hi! I'm Martei Duel
             </h3>
             <h1
               className="job"

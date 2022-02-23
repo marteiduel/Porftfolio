@@ -14,7 +14,7 @@ const educationContent = [
   },
   {
     passingYear: "2016",
-    degree: "Maketing",
+    degree: "Marketing",
     instituteName: "UVM, Mexicali, Baja California",
   },
 ];
