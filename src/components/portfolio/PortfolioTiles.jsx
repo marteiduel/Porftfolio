@@ -13,21 +13,25 @@ const PortfolioTiles = () => {
         <PortfolioTile
           title="DevCampFries"
           imageSource={"../../../img/portfolio/2.jpg"}
+          website="https://devcamp-fries-martei.netlify.app"
         />
         <PortfolioTile
           title="Delipan"
           imageSource={"../../../img/portfolio/1.jpg"}
+          website="http://delipanutah.com/"
         />
         <PortfolioTile
-          title="Master Stylist"
-          imageSource={"../../../img/portfolio/MasterStylist.jpg"}
+          title="Cynthia's Pics"
+          imageSource={"../../../img/portfolio/Cynthiaspics.jpg"}
+          website="http://cynthiaspics.com/"
         />
         <PortfolioTile
-          title="DevCampFries"
-          imageSource={"../../../img/portfolio/2.jpg"}
+          title="Glass Auto Repair"
+          imageSource={"../../../img/portfolio/GlassRepairShop.jpg"}
+          website="google.com"
         />
         <PortfolioTile
-          title="Delipan"
+          title="Solar Panels"
           imageSource={"../../../img/portfolio/1.jpg"}
         />
       </div>
