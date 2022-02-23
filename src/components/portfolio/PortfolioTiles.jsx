@@ -28,7 +28,7 @@ const PortfolioTiles = () => {
         <PortfolioTile
           title="Glass Auto Repair"
           imageSource={"../../../img/portfolio/GlassRepairShop.jpg"}
-          website="google.com"
+          website="glassrepair.marteiportfolio.site"
         />
         {/* <PortfolioTile
           title="Solar Panels"
