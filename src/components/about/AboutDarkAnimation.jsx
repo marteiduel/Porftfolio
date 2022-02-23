@@ -34,10 +34,9 @@ const AboutDarkAnimation = () => {
               based in <span className="theme-color">Utah</span>
             </h5>
             <p>
-              I design and develop services for customers specializing creating
-              stylish, modern websites, web services and online stores. My
-              passion is to design digital user experiences through meaningful
-              interactions.
+            I design and develop services for customers specializing in creating
+              stylish and modern websites, web services, and online stores. My
+              passion is to design digital user experiences. Check out my Portfolio
             </p>
           </div>
           <div className="extra">
