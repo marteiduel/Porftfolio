@@ -30,10 +30,10 @@ const PortfolioTiles = () => {
           imageSource={"../../../img/portfolio/GlassRepairShop.jpg"}
           website="google.com"
         />
-        <PortfolioTile
+        {/* <PortfolioTile
           title="Solar Panels"
           imageSource={"../../../img/portfolio/1.jpg"}
-        />
+        /> */}
       </div>
     </div>
   );
