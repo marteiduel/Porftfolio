@@ -36,7 +36,7 @@ const AboutDarkAnimation = () => {
             <p>
             I design and develop services for customers specializing in creating
               stylish and modern websites, web services, and online stores. My
-              passion is to design digital user experiences. Check out my Portfolio
+              passion is to design digital user experiences. Check out my Portfolio!
             </p>
           </div>
           <div className="extra">
