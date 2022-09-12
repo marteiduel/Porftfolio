@@ -23,15 +23,16 @@ const skillsContent = [
   {
     name: "Web Design",
     skillPercent: "90",
+  },  
+  {
+    name: "Javascript",
+    skillPercent: "90",
   },
   {
-    name: "Mobile App",
+    name: "React",
     skillPercent: "80",
   },
-  {
-    name: "Javascript/React",
-    skillPercent: "75",
-  },
+
   {
     name: "Wordpress",
     skillPercent: "70",
@@ -45,6 +46,11 @@ const skillsContent = [
 const awardContent = [
   {
     awardYear: "2022",
+    degree: "Professional Services",
+    instituteName: "Free Agent CRM",
+  },
+  {
+    awardYear: "2021-2022",
     degree: "Lead Developer",
     instituteName: "Maven Software Development",
   },

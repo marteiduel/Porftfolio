@@ -20,11 +20,11 @@ const PortfolioTiles = () => {
           imageSource={"../../../img/portfolio/1.jpg"}
           website="http://delipanutah.com/"
         />
-        <PortfolioTile
+        {/* <PortfolioTile
           title="Cynthia's Pics"
           imageSource={"../../../img/portfolio/Cynthiaspics.jpg"}
           website="http://cynthiaspics.com/"
-        />
+        /> */}
         <PortfolioTile
           title="Glass Auto Repair"
           imageSource={"../../../img/portfolio/GlassRepairShop.jpg"}

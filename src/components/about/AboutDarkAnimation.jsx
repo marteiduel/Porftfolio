@@ -55,7 +55,7 @@ const AboutDarkAnimation = () => {
                 </li>
                 <li>
                   <p>
-                    <span>Age :</span> 24 Years
+                    <span>Age :</span> 25 Years
                   </p>
                 </li>
                 <li>
@@ -87,7 +87,7 @@ const AboutDarkAnimation = () => {
             </div>
             {/* End list */}
             <div className="beny_tm_button color-outline">
-              <a href="img/demo/Martei_Resume.pdf" download>
+              <a href="img/demo/Martei_Duel_Resume.pdf" download>
                 <span className="wrapper">
                   <span className="first">Download CV</span>
                   <span className="second">Download CV</span>
