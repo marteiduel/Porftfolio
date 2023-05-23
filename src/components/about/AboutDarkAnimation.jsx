@@ -27,16 +27,15 @@ const AboutDarkAnimation = () => {
           <div className="short">
             <h3>Hi my name is Martei Duel</h3>
             <h5>
-              A Lead{" "}
-              <span className="theme-color">
-                Software developer and Marketing Expert{" "}
-              </span>
+              Aspiring
+              <span className="theme-color"> Software developer </span>
               based in <span className="theme-color">Utah</span>
             </h5>
             <p>
-            I design and develop services for customers specializing in creating
-              stylish and modern websites, web services, and online stores. My
-              passion is to design digital user experiences. Check out my Portfolio!
+              I design and develop services for customers specializing in
+              creating stylish and modern websites, web services, and online
+              stores. My passion is to design digital user experiences. Check
+              out my Portfolio!
             </p>
           </div>
           <div className="extra">
@@ -55,22 +54,13 @@ const AboutDarkAnimation = () => {
                 </li>
                 <li>
                   <p>
-                    <span>Age :</span> 25 Years
+                    <span>Age :</span> 26 Years
                   </p>
                 </li>
-                <li>
-                  <p>
-                    <span>Phone :</span> (801) 856-4685
-                  </p>
-                </li>
+
                 <li>
                   <p>
                     <span>Nationality :</span> USA-Mexico
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <span>Email :</span> marteiwgc@gmail.com
                   </p>
                 </li>
                 <li>

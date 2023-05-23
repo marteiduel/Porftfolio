@@ -44,7 +44,11 @@ const SliderDarkAnimation = () => {
                   loop
                   typeSpeed={130}
                   backSpeed={60}
-                  strings={["Software Developer", "Marketer", "Media Manager"]}
+                  strings={[
+                    "Software Developer",
+                    "Web Developer",
+                    "Automation ",
+                  ]}
                   smartBackspace
                   shuffle={false}
                   backDelay={1}
@@ -63,9 +67,9 @@ const SliderDarkAnimation = () => {
               data-aos-duration="1200"
               data-aos-delay="100"
             >
-              I'm a developer focused on crafting user‑friendly experiences, I am
-              passionate about building excellent software that increases profit
-              for businesses.
+              I'm a developer focused on crafting user‑friendly experiences, I
+              am passionate about building excellent software that increases
+              profit for businesses.
             </p>
             <div
               className="mobile_social"
