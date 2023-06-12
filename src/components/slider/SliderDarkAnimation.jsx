@@ -87,12 +87,17 @@ const SliderDarkAnimation = () => {
               data-aos-duration="1200"
               data-aos-delay="200"
             >
-              {/* <a className="anchor" href="#about">
+              <a
+                className="anchor"
+                href="https://blog.marteiduel.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <span className="wrapper">
                   <span className="first">See Portfolio</span>
                   <span className="second">See Portfolio</span>
                 </span>
-              </a> */}
+              </a>
             </div>
             {/* End beny_tm_button */}
           </div>
